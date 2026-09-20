@@ -26,6 +26,18 @@ Pick files from device storage, build a playlist, and play them with Material 3 
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="screen2.png" width="240" alt="Video player playlist" />
+  &nbsp;
+  <img src="screen1.png" width="240" alt="Video playback" />
+  &nbsp;
+  <img src="screen3.png" width="240" alt="Player controls" />
+</p>
+
+---
+
 ## Architecture
 
 ```mermaid
