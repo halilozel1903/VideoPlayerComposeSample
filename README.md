@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/AGP-9.4.0-3DDC84?logo=android&logoColor=white" alt="AGP" />
   <img src="https://img.shields.io/badge/minSdk-26-orange" alt="minSdk" />
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License" />
+  <img src="https://github.com/halilozel1903/VideoPlayerComposeSample/actions/workflows/android-ci.yml/badge.svg" alt="Android CI" />
 </p>
 
 A production-shaped Android sample that plays **local videos** with [AndroidX Media3](https://developer.android.com/media/media3) (ExoPlayer) and a **Compose-first** UI.
@@ -113,10 +114,30 @@ app/src/main/java/com/halil/ozel/videoplayercomposesample/
 ```bash
 git clone https://github.com/halilozel1903/VideoPlayerComposeSample.git
 cd VideoPlayerComposeSample
+chmod +x gradlew
 ./gradlew :app:assembleDebug
 ```
 
 Open the project in Android Studio, connect a device or emulator (API 26+), and run the `app` configuration.
+
+### CLI (same steps as CI)
+
+These commands are what GitHub Actions runs on every pull request. Use them locally before you push.
+
+```bash
+chmod +x gradlew
+./gradlew --version
+./gradlew buildHealthCheck
+./gradlew verifyDependencies
+./gradlew :app:testDebugUnitTest
+./gradlew :app:assembleDebug
+```
+
+One-shot equivalent:
+
+```bash
+./gradlew fullBuildVerification
+```
 
 ### Try the player
 
@@ -151,7 +172,7 @@ The ViewModel owns the `Player`, restores the URI list from `SavedStateHandle`, 
 ```bash
 ./gradlew help
 ./gradlew build --dry-run
-./gradlew :app:assembleDebug
+./gradlew fullBuildVerification
 ```
 
 ---
