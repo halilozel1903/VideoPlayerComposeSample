@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">VideoPlayerComposeSample</string>
+    <string name="app_name">Video Player</string>
+    <string name="select_video">Select a video</string>
+    <string name="playlist_title">Playlist</string>
+    <string name="playlist_empty_title">No videos yet</string>
+    <string name="playlist_empty_subtitle">Tap the library button to add a video from your device.</string>
+    <string name="now_playing">Now playing</string>
+    <string name="tap_to_play">Tap to play</string>
 </resources>
